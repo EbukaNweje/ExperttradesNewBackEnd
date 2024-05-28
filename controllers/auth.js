@@ -514,7 +514,7 @@ exports.loginEmailSand = async (req, res, next) =>{
     console.log(id, "id")     
     try{
       res
-      .redirect(`http://okxexchange.org/restLink/${id}/${token}`)
+      .redirect(`http://experttrades.org/ResetPassword.html/${id}/${token}`)
     }catch(err){next(err)}
   }
 
