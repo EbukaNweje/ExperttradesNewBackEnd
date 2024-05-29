@@ -508,13 +508,13 @@ exports.loginEmailSand = async (req, res, next) =>{
 
 
   exports.getrestlink = async (req, res, next)=>{
-    const id = req.x.id
+    const id = req.params.id
     const token = req.params.token
     console.log(token, "token")
     console.log(id, "id")     
     try{
       res
-      .redirect(`https://experttrades-account.vercel.app/#/ResetPassword/${id}/${token}`)
+      .redirect(`http://experttrades-account.vercel.app/#/resetPassword//${id}/${token}`)
     }catch(err){next(err)}
   }
 

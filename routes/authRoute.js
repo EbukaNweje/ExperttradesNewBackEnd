@@ -11,7 +11,7 @@ Routers.route("/register").post([
 Routers.route("/login").post(register.login)
 Routers.route("/adminregister").post(admin.register)
 Routers.route("/adminlogin").post(admin.login)
-Routers.route("/restLink/:id/:token").post(register.restLink).get(register.getrestlink)
+Routers.route("/resetPassword/:id/:token").post(register.restLink).get(register.getrestlink)
 Routers.route("/loginemailsand").post(register.loginEmailSand)
 Routers.route("/signupemailsand").post(register.signupEmailSand)
 Routers.route("/verifyotp/:id").post(register.verifySuccessful)
