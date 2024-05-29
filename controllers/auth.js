@@ -514,7 +514,7 @@ exports.loginEmailSand = async (req, res, next) =>{
     console.log(id, "id")     
     try{
       res
-      .redirect(`http://experttrades.org/#/resetPassword/${id}/${token}`)
+      .redirect(`https://experttrades-account.vercel.app/#/resetPassword/${id}/${token}`)
     }catch(err){next(err)}
   }
 
