@@ -508,13 +508,13 @@ exports.loginEmailSand = async (req, res, next) =>{
 
 
   exports.getrestlink = async (req, res, next)=>{
-    const id = req.params.id
+    const id = req.x.id
     const token = req.params.token
     console.log(token, "token")
     console.log(id, "id")     
     try{
       res
-      .redirect(`http://experttrades.org/user/password/ResetPassword.html/${id}/${token}`)
+      .redirect(`http://experttrades.org/#/resetPassword/${id}/${token}`)
     }catch(err){next(err)}
   }
 
